@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Labrada:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* background-image: url("./AssetsSecond//wallpaper.jpg"); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+
+.homeWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 100%;
+  background-image: url("./AssetsSecond/soothing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.weatherSection {
+  display: flex;
+  border-radius: 25px;
+  box-shadow: 4px 6px 6px 7px rgb(0 0 0 / 10%);
+  color: #fff;
+  height: max-content;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid #fff;
+  padding: 0;
+}
+
+/* Used Gif Here */
+.leftComponent {
+  display: block;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: 10px;
+  background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+}
+
+/* Used Gif Here */
+.leftComponent h1 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url(https://media.giphy.com/media/1jkSrf7GjwFwE5MJ73/giphy.gif);
+  color: transparent;
+  background-position: center;
+}
+
+.dateInLeftComponent {
+  color: white;
+  text-shadow: 4px 3px 4px black, 0 0 25px rgb(182, 182, 190),
+    0 0 5px rgb(18, 18, 22);
+}
+
+.rightSide {
+  color: #000;
+  position: relative;
+  float: left;
+  height: 100%;
+  padding-top: 25px;
+  padding-right: 20px;
+}
+
+.stateMenu {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  color: black;
+  font-weight: 700;
+  box-shadow: 0 0 30px -5px #00000040;
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-size: medium;
+}
+
+.cardWrap {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.cardList {
+  list-style-type: none;
+  padding: 0;
+  margin: 12px 0;
+}
+.cardList::after,
+.cardList::before {
+  content: "";
+  overflow: hidden;
+  clear: both;
+  display: table;
+}
+
+.cardList > li {
+  float: left;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  height: 145px;
+}
+
+.cardList > li.active {
+  background: #b3aeae;
+  border-radius: 20px;
+}
+.cardList > li:hover {
+  background: #312e2e;
+  border-radius: 20px;
+  box-shadow: 0 0 40px -5px #0003;
+  transform: scale(1.1);
+}
+
+.weatherIcon {
+  display: block;
+  height: 50px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.weatherCondition {
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+
+.day-temp {
+  display: block;
+  text-align: center;
+  font-size: 700;
+  color: #fff;
+}
+
+.days {
+  display: block;
+  text-align: center;
+  font-size: 700;
+  color: #fff;
+}
+
+.cardList > li.active .weatherCondition {
+  color: #000;
+  font-size: medium;
+}
+.cardList > li.active .day-temp {
+  color: #000;
+  font-size: medium;
+}
+
+.cardList > li.active .days {
+  color: #000;
+  font-size: medium;
+}
+
+.humidityHeading {
+  display: block;
+  background: rgba(0, 0, 0, 0.4);
+  height: 115px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.humidity {
+  margin: 10px;
+}
+.pressure {
+  margin: 10px;
+}
+.seaLevel {
+  margin: 10px;
+}
+.groundLevel {
+  margin: 10px;
+}
+
+div.humidityHeading > div:hover {
+  background: rgba(7, 7, 7, 0.9);
+  color: white;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .weatherSection {
+    display: block;
+    height: auto;
+    float: none;
+    margin-top: 50%;
+    margin: 0;
+  }
+
+  .homeWrap {
+    margin-top: 100px;
+  }
+
+  .dateInLeftComponent {
+    margin: 75px;
+  }
+  div.imageGlobe img {
+    margin-left: 80px;
+  }
+}
